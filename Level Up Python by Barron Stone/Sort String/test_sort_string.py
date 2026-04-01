@@ -2,9 +2,10 @@ import unittest
 from sort_string import sort_string
 
 class TestSortString(unittest.TestCase):
-    def test_course_example(self):
-        # Standard example cases for case-insensitive sort
+    def test_course_example_1(self):
         self.assertEqual(sort_string("String of words"), "of String words")
+
+    def test_course_example_2(self):
         self.assertEqual(sort_string("banana ORANGE apple"), "apple banana ORANGE")
 
     def test_mixed_case(self):
